@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    --very-dark-blue /* (main background) */: hsl(233, 47%, 7%);
+    --dark-desaturated-blue /* (card background) */: hsl(244, 38%, 16%);
+    --soft-violet /* (accent) */: hsl(277, 64%, 61%);
+    --font-inter: 'Inter', sans-serif;
+    --font-lexend: 'Lexend Deca', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--very-dark-blue);
+}
+
+.section__people{
+    width: 35rem;
+    height: 86rem;
+    margin: 1rem auto;
+    background-color: var(--dark-desaturated-blue);
+    border-radius: 1rem;
+}
+
+.sepia{
+    width: 35rem;
+    border-radius: 1rem 1rem 0 0;
+    filter: var(--soft-violet);
+}
+
+
+h1{
+    font-family: var(--font-inter);
+    font-size: 2.8rem;
+    color: #fff;
+    margin: 3rem;
+    text-align: center;
+}
+.spn{
+    color: var(--soft-violet);
+}
+
+.section__text{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 4rem;
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-family: var(--font-lexend);
+    opacity: .7;
+}
+
+article{
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 5rem;
+    margin-left: 12rem;
+}
+
+h2{
+    color: #fff;
+    font-size: 2.3rem;
+    font-family: var(--font-inter);
+    margin-bottom: 3rem;
+}
+
+h2 span{
+    text-transform: uppercase;
+    font-size: 2rem;
+    opacity: .6;
+}
+
+/* article p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: var(--font-lexend);
+    opacity: .7;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+} */
+
+@media (min-width: 600px){
+    .section__people{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 5rem auto;
+        width: 120rem;
+        height: 48rem;
+    }
+
+    .sepia{
+        width: 60rem;
+        height: 48rem;
+        object-fit: cover;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        margin-top: 9rem;
+        margin-left: 10rem;
+        margin-right: 15rem;
+    }
+
+    .section__text{
+        text-align: start;
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+    article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: center;
+        width: 50rem;
+        margin: 10rem;
+        }
+    h2{
+        font-family: var(--font-inter);
+        margin-left: 4rem;
+        text-align: start;
+    }
+    h2 span {
+        font-family: var(--font-lexend);
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 2rem;
+        opacity: .6;
+    }
+}
